@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Code Quiz</title>
+
+    <!-- Link to Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
+
+  </head>
+
+  <body>
+    <!-- Navbar left -->
+    <nav class="navbar fixed top navbar-expand-lg navbar-light p-0 border-bottom">
+      <div class="container ml-5">
+        <div class="d-flex mb-0 ml-5 font-weight-bold">
+          <a class="p-4 highScores" href= "#">View High Scores
+          </a>
+        </div>
+      </div>
+
+    <!-- Navbar right -->
+      <div class="container justify-content-end">
+        <ul class="nav">    
+          <li class="nav-item">
+            <div class="nav-link font-weight-bold timeRemaining">Time Remaining:
+            </div>
+          </li>          
+        </ul>
+      </div>
+    </nav>
+    
+    <!-- main header -->
+    <div class="container mx-auto">
+      <header>
+        <h1 class="codeQuiz text-center">Code Quiz</h1>
+      </header>
+
+     <!-- establishing the full card -->
+      <div class="card">
+        
+        <!-- instructions to user for taking quiz -->
+        <div class="card-header text-center" id="charLength">
+          <h6>Type out instructions for taking quiz.
+          </h6>
+        </div>
+
+        <!-- area to display quiz questions and answers -->
+        <div class="card-body mx-auto">
+          <input class="form-control" id="mainQuiz"
+            type = "text"
+            aria-label="Main Quiz">
+          </input>
+        </div>
+
+        <!-- buttons -->
+        <div class="card-footer mx-auto">
+          <button type="button" id="startQuiz" class="btn btn-success rounded-2">Start Quiz
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js">
+    </script>
+    <script src="./questions.js">
+    </script>
+  </body>
+</html>
