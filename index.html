@@ -21,7 +21,7 @@
         </div>
       </div>
 
-    <!-- Navbar right -->
+      <!-- Navbar right -->
       <div class="container justify-content-end">
         <div class="nav">    
           <span class="nav-item">
@@ -34,7 +34,7 @@
       </div>
     </nav>
     
-    <!-- main header -->
+    <!-- main container -->
     <div class="container mx-auto">
       <header>
         <h1 class="codeQuiz text-center">Code Quiz</h1>
@@ -51,14 +51,14 @@
             TIME: You have 60 seconds to answer all questions. 
             For each question answered incorrectly, 15 seconds will be subtracted from the time remaining.
             The timer stops when all questions have been answered correctly, or the time remaining equals zero.
-            SCORE: add 10 points for each correct answer; subtract five points for each incorrect answer;
-            if all questions are answered correctly before time runs out, add one point for each second left;
-            if time runs out before all questions are answered correctly, subtract five points for each unanswered question.
-            HIGH SCORE: Once the quiz is completed, you will have the option to add your initials and score to the high score list.
+            SCORE: Add 10 points for each correct answer; if all questions are answered correctly before time runs out, 
+            add one point for each second left; if time runs out before all questions are answered correctly, 
+            subtract five points for each unanswered question.
+            HIGH SCORE: Once the quiz is completed, you will have the option to add your initials and score to the high scores list.
           </h6>
         </div>
 
-        <!-- area to display quiz questions and answers -->
+        <!-- area to display quiz questions -->
         <div class="card-body mx-auto">
           <input class="form-control" id="mainQuiz"
             type = "text"
@@ -66,10 +66,66 @@
           </input>
         </div>
 
+        <!-- area to display quiz questions -->
+        <div class="card-body mx-auto">
+          <input class="form-control" id="questions"
+            type = "text"
+            aria-label="Questions">
+          </input>
+        </div>
+
+        <!-- area to display quiz answers -->
+        <div class="card-body mx-auto">
+          <input class="form-control" id="answers"
+            type = "text"
+            aria-label="Answers">
+          </input>
+          
+          <!-- quiz answer buttons -->
+          <div class="btn-group-vertical">
+            <button type="button" id="answerA">Answer A
+            </button>
+            <button type="button" id="answerB">Answer B
+            </button>
+            <button type="button" id="answerC">Answer C
+            </button>
+            <button type="button" id="answerD">Answer D
+            </button>
+          </div>
+        </div>
+
+        <!-- area to display feedback to user -->
+        <div class="card-body mx-auto">
+          <input class="form-control" id="feedback"
+            type = "text"
+            aria-label="Feedback">
+          </input>
+        </div>
+
+        <!-- area to display user score to user -->
+        <div class="card-body mx-auto">
+          <input class="form-control" id="displayUserScore"
+            type = "text"
+            aria-label="User Score Display">
+          </input>
+        </div>
+
+        <!-- area to display high scores to user -->
+        <div class="card-body mx-auto">
+          <input class="form-control" id="displayHighScores"
+            type = "text"
+            aria-label="High Score Display">
+          </input>
+        </div>
+
         <!-- buttons -->
         <div class="card-footer mx-auto buttons">
+          <button type="button" id="clearHighScores" class="btn btn-secondary rounded-2">Clear High Scores
+          </button>
           <button type="button" id="startQuiz" class="btn btn-success rounded-2">Start Quiz
           </button>
+          <button type="button" id="startOver" class="btn btn-danger rounded-2">Start Over
+          </button>     
         </div>
       </div>
     </div>
