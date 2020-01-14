@@ -1,5 +1,7 @@
 // questions and answers for Code Quiz
-var questions = [
+
+// making object a string
+var questionsString = JSON.stringify ([
   {
     title: 'Which item below is one of quickest ways to double check that code is functioning correctly as it is being written?',
     choices: ['GitHub', 'jQuery', 'Ctrl + s', 'console.log'],
@@ -20,4 +22,7 @@ var questions = [
     choices: ['central place to view code history and track changes', 'central spot for master files', 'both answers', 'neither answer'],
     answer: 'both answers'
   },
-];
+]);
+
+// setting variable to local storage
+localStorage.setItem("varQuestionsStored", questionsString);
